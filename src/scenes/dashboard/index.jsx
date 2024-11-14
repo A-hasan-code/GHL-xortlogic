@@ -23,20 +23,7 @@ const Dashboard = () => {
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
-        <Box>
-          <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
-          </Button>
-        </Box>
+        <Box></Box>
       </Box>
 
       {/* GRID & CHARTS */}
@@ -53,6 +40,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          sx={{ borderRadius: "23px" }}
         >
           <StatBox
             title="12,361"
@@ -60,9 +48,7 @@ const Dashboard = () => {
             progress="0.75"
             increase="+14%"
             icon={
-              <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
+              <EmailIcon sx={{ color: colors.grey[100], fontSize: "26px" }} />
             }
           />
         </Box>
@@ -72,6 +58,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          sx={{ borderRadius: "23px" }}
         >
           <StatBox
             title="431,225"
@@ -80,7 +67,7 @@ const Dashboard = () => {
             increase="+21%"
             icon={
               <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
@@ -91,6 +78,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          sx={{ borderRadius: "23px" }}
         >
           <StatBox
             title="32,441"
@@ -99,7 +87,7 @@ const Dashboard = () => {
             increase="+5%"
             icon={
               <PersonAddIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
@@ -110,6 +98,7 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          sx={{ borderRadius: "23px" }}
         >
           <StatBox
             title="1,325,134"
@@ -117,9 +106,7 @@ const Dashboard = () => {
             progress="0.80"
             increase="+43%"
             icon={
-              <TrafficIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
-              />
+              <TrafficIcon sx={{ color: colors.grey[100], fontSize: "26px" }} />
             }
           />
         </Box>
@@ -129,6 +116,7 @@ const Dashboard = () => {
           gridColumn="span 8"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
+          sx={{ borderRadius: "23px" }}
         >
           <Box
             mt="25px"
@@ -136,8 +124,9 @@ const Dashboard = () => {
             display="flex "
             justifyContent="space-between"
             alignItems="center"
+            sx={{ borderRadius: "23px" }}
           >
-            <Box>
+            <Box sx={{ borderRadius: "23px" }}>
               <Typography
                 variant="h5"
                 fontWeight="600"
@@ -148,7 +137,7 @@ const Dashboard = () => {
               <Typography
                 variant="h3"
                 fontWeight="bold"
-                color={colors.greenAccent[500]}
+                color={colors.grey[100]}
               >
                 $59,342.32
               </Typography>
@@ -156,12 +145,12 @@ const Dashboard = () => {
             <Box>
               <IconButton>
                 <DownloadOutlinedIcon
-                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                  sx={{ fontSize: "26px", color: colors.grey[100] }}
                 />
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" m="-20px 0 0 0">
+          <Box height="250px" m="-20px 0 0 0" sx={{ borderRadius: "23px" }}>
             <LineChart isDashboard={true} />
           </Box>
         </Box>
@@ -170,6 +159,7 @@ const Dashboard = () => {
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           overflow="auto"
+          sx={{ borderRadius: "23px" }}
         >
           <Box
             display="flex"
@@ -194,7 +184,7 @@ const Dashboard = () => {
             >
               <Box>
                 <Typography
-                  color={colors.greenAccent[500]}
+                  color={colors.grey[100]}
                   variant="h5"
                   fontWeight="600"
                 >
@@ -206,7 +196,7 @@ const Dashboard = () => {
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
               <Box
-                backgroundColor={colors.greenAccent[500]}
+                backgroundColor={colors.blueAccent[900]}
                 p="5px 10px"
                 borderRadius="4px"
               >
@@ -222,6 +212,7 @@ const Dashboard = () => {
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           p="30px"
+          sx={{ borderRadius: "23px" }}
         >
           <Typography variant="h5" fontWeight="600">
             Campaign
@@ -235,7 +226,7 @@ const Dashboard = () => {
             <ProgressCircle size="125" />
             <Typography
               variant="h5"
-              color={colors.greenAccent[500]}
+              color={colors.grey[100]}
               sx={{ mt: "15px" }}
             >
               $48,352 revenue generated
@@ -247,6 +238,7 @@ const Dashboard = () => {
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
+          sx={{ borderRadius: "23px" }}
         >
           <Typography
             variant="h5"
@@ -264,6 +256,7 @@ const Dashboard = () => {
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           padding="30px"
+          sx={{ borderRadius: "23px" }}
         >
           <Typography
             variant="h5"
